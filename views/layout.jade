@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lora'  type='text/css')
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+
+    
+    script.
+      function init(element) {
+        var xmin = 0;
+        var xmax = 700;
+        var ymin = 0;
+        var ymax = 700;
+
+        var xCoord = Math.floor((Math.random()*xmax)+xmin);
+        var yCoord = Math.floor((Math.random()*ymax)+ymin);
+        var xCoordStr = xCoord.toString() + "px"; 
+        var yCoordStr = yCoord.toString() + "px";
+
+        element.style.left = xCoordStr;
+        element.style.top = yCoordStr;
+
+      }
+      
+      function test(){
+        var elements = document.getElementsByClassName('test'); 
+        for (var i = 0; i < elements.length; i++) {
+          init(elements[i]);
+        }
+      }
+      /*
+      $(function () {
+        $(".test p").each(function (i, elt) {
+          $(elt).css({
+            left: Math.random() * 200,
+            top: Math.random() * 200
+          });
+        });
+      });
+      */
+      
+    body(onload="test()")!= body
+
+  block content

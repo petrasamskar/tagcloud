@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  font-family: 'Lora', serif;
+  color:green;
+}
+h1 {
+  color: black;
+}
+button {
+  margin:10px;
+}
+a {
+  color: #00B7FF;
+}
+.word0 {
+  font-size:15px;
+}
+.word1 {
+  font-size:30px;
+}
+.word3 {
+  font-size:45px;
+}
+.word5 {
+  font-size:50px;
+}
+.word6 {
+  font-size:55px;
+}
+.word10 {
+  font-size:60px;
+}
+.word20 {
+  font-size:65px;
+  font-weight: bold;
+}
+.test {
+  position: absolute;
+}
+.testar {
+  height: 1000px;
+}

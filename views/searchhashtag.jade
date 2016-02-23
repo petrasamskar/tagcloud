@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1.
+      Ange hashtag
+    form#formSearchHashtag(name="searchHashtag",method="post",action="/tagcloud")
+        input#inputHashTag(type="text", placeholder="hashtag", name="hashtag")
+        button#btnSubmit(type="submit") Generera ordmoln
